@@ -6,20 +6,101 @@
     <title>Portofolio Fahreza</title>
 
     <!-- CSS External File -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <!-- Header Content --> 
-    <header></header>   
+    <!-- Header Content -->
+    <header class="main-header p-[8px]">
+        <!-- Logo Website -->
+        <div class="main-logo"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex gap-1">
+            <a class="border rounded p-2" href="#home-section">Home</a>"
+            <a class="border rounded p-2" href="#profile-section">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-section">Portfolio</a>"
+            <a class="border rounded p-2" href="#message-section">Messege Us</a>"
+        </nav>
+    </header>   
+
+    <hr />
 
     <!-- Main Content -->   
-    <main></main>   
+    <main>
+        <!--Home-->
+        <section id="home-section" class="home-section p-4 min-h-[500px]>
+            <h1 class="text-3xl font-bold mb-4"><span id="greet-name"></span>Welcome to My Portfolio</h1>
+            <p class="mb-4">Hello! I'm Fahreza, a passionate developer specializing in web development and design. Explore my work and feel free to reach out!</p>
+            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded">Learn More</a>  
+        </section>
+
+        <hr />
+        <!--Our Profile-->
+        <section id="profile-section"class="profile-section p-4 min-h-[500px]>   
+            <h2 class="text-2xl font-bold mb-4">Our Profile</h2>   
+            <p class="mb-4">I am Fahreza, a dedicated web developer with a passion for creating beautiful and functional websites. With expertise in HTML, CSS, JavaScript, and various frameworks, I strive to deliver high-quality solutions that meet client needs.</p>
+            <a href="#" class="bg-green-500 text-white px-4 py-2 rounded">Read More</a>  
+        </section>      
+
+        <hr />
+        <!--Portfolio-->
+        <section id="portfolio-section" class="portfolio-section p-4 min-h-[500px]>   
+            <h2 class="text-2xl font-bold mb-4">Portfolio</h2>   
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="border rounded p-4">
+                    <h3 class="font-bold mb-2">Project 1</h3>
+                    <p>A responsive e-commerce website built with React and Tailwind CSS.</p>
+                </div>
+                <div class="border rounded p-4">
+                    <h3 class="font-bold mb-2">Project 2</h3>
+                    <p>A personal blog platform developed using Django and Bootstrap.</p>
+                </div>
+                <div class="border rounded p-4">
+                    <h3 class="font-bold mb-2">Project 3</h3>
+                    <p>A portfolio website showcasing various design projects, created with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <a href="#" class="bg-purple-500 text-white px-4 py-2 rounded mt-4 inline-block">View All Projects</a>
+        </section> 
+        
+        <hr />
+        <!--Messege Us-->           
+        <section id="message-section" class="message-section p-4 min-h-[500px]>   
+            <h2 class="text-2xl font-bold mb-4">Messege Us</h2>   
+            <form class="max-w-md">
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name:</label>
+                    <input class="w-full border rounded p-2" type="text" id="name" name="name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email:</label>
+                    <input class="w-full border rounded p-2" type="email" id="email" name="email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Message:</label>
+                    <textarea class="w-full border rounded p-2" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <form/>
+
+                <button onclick="validateForm()"class="bg-yellow-500 text-white px-4 py-2 rounded" type="submit">Send Message</button>
+               
+        </section> 
+    </main>   
     
     <!-- Footer Conten --> 
-    <footer></footer>   
+    <footer>
+        <div class="p-4 text-center bg-gray-200">
+            <p>&copy; 2025 Fahreza. All rights reserved.</p>
+        </div>
+    </footer>   
 
-    <!-- JavaScript External File -->   
-    <script src="js\script.js"></script>
+    <!-- JavaScript External File -->
+    <script src="js/script.js"></script>
+      
+    
     
 </body>
 </html>
